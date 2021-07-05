@@ -3,23 +3,29 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: hsl(233, 47%, 7%);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
 }
 .dashboard{
-    width: 1000px;
-    height: 600px;
-    background-color: white;
+    width: 1240px;
+    height: 450px;
+    background-color: hsl(244, 38%, 16%);
     background-repeat: no-repeat;
     background-position: center top;
     position: relative;
     margin: 0 20px;
     border-radius: 12px;
-    padding: 100px 16px 24px 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: whitesmoke;
+
 }
 .attribution {
     font-size: 11px;
@@ -31,4 +37,24 @@ body{
 
   .attribution a {
     color: whitesmoke;
+}
+.leftSide{
+    padding: 50px 50px;
+    text-align: left;
+    display: grid;
+}
+.leftSide p{
+    font-weight: 400;
+}
+.rightSide{
+    background-image: url('images/image-header-desktop.jpg');
+    background-repeat:round;
+    border-radius: 0px 12px 12px 0px;
+}
+
+.stats{
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    text-align: left;
+    justify-content: space-evenly;
 }
