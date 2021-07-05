@@ -3,12 +3,32 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+}
+.dashboard{
+    width: 1000px;
+    height: 600px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: relative;
+    margin: 0 20px;
+    border-radius: 12px;
+    padding: 100px 16px 24px 16px;
+}
 .attribution {
     font-size: 11px;
     text-align: center;
+    position: fixed;
+    align-self: flex-end;
+    color: whitesmoke;
 }
 
   .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: whitesmoke;
 }
