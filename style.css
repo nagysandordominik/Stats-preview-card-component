@@ -9,7 +9,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-image: linear-gradient(to left bottom, #051937, #0c2766, #363093, #6d2ebb, #ad09da);
     font-family: 'Inter', sans-serif;
     font-size: 15px;
 }
@@ -25,7 +25,6 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: whitesmoke;
-    box-shadow: 0px 0px 50px 5px #000000;
 }
 .attribution {
     font-size: 11px;
@@ -35,7 +34,7 @@ body{
     color: whitesmoke;
 }
 
-  .attribution a {
+.attribution a {
     color: whitesmoke;
 }
 .leftSide{
@@ -58,15 +57,12 @@ body{
     color: hsl(277, 64%, 61%);
 }
 
-.rightSide img{
-    object-fit: cover;
+.rightSide{
+    background-image: url('images/image-header-desktop.jpg');
+    background-size: cover;
+    background-clip: border-box;
     border-radius: 0px 12px 12px 0px;
-    width: 620px;
     height: 450px;
-}
-
-#overlay{
-  
 }
 
 .stats{
@@ -84,4 +80,71 @@ body{
 
 .stats dt{
     font-size: 12px;
+}
+
+@media (max-width: 1166px) {
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+    .dashboard{
+        width: 450px;
+        height: 800px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .dashboard br{
+        display: none;
+    }
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: fixed;
+        align-self: flex-end;
+        color: whitesmoke;
+    }
+    
+    .attribution a {
+        color: whitesmoke;
+    }
+    .leftSide{
+        padding: 83px 83px;
+        text-align: center;
+        display:grid;
+        gap: 35px;
+        padding-top: 350px;
+    }
+    
+    .leftSide h1{
+    }
+    
+    .leftSide p{
+        font-weight: 400;
+        line-height: 30px;
+    }
+    .leftSide span{
+        color: hsl(277, 64%, 61%);
+    }
+    
+    .rightSide{
+        background-image: url('images/image-header-desktop.jpg');
+        background-size: cover;
+        background-clip: border-box;
+        border-radius: 12px 12px 0px 0px;
+        height: 300px;
+        width: 450px;
+        display: block;
+        position: absolute;
+
+    }
+    
+    .stats{
+        gap: 1px 1px;
+        grid-template: repeat(3, 1fr) / repeat(3, 1fr);;
+        text-align: left;
+        justify-content: center;
+    }
 }
