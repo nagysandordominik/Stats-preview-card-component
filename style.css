@@ -101,7 +101,7 @@ body{
         display: none;
     }
     .attribution {
-        font-size: 7px;
+        font-size: 12px;
         text-align: center;
         position: fixed;
         align-self: flex-end;
