@@ -82,25 +82,26 @@ body{
     font-size: 12px;
 }
 
-@media (max-width: 1166px) {
+@media (max-width: 500px) {
     body{
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 15px;
+        font-size: 10px;
     }
     .dashboard{
-        width: 450px;
-        height: 800px;
+        width: 250px;
+        height: 600px;
         display: flex;
         flex-direction: row-reverse;
+        justify-content: center;
     }
     .dashboard br{
         display: none;
     }
     .attribution {
-        font-size: 11px;
+        font-size: 7px;
         text-align: center;
         position: fixed;
         align-self: flex-end;
@@ -111,19 +112,25 @@ body{
         color: whitesmoke;
     }
     .leftSide{
-        padding: 83px 83px;
+        padding: 86px 86px;
         text-align: center;
         display:grid;
-        gap: 35px;
-        padding-top: 350px;
+        gap: 20px;
+        padding-top: 170px;
     }
     
     .leftSide h1{
+        line-height: 20px;
+        letter-spacing: 1px;
+        text-align: center;
+        width: 220px;
     }
+  
     
     .leftSide p{
         font-weight: 400;
-        line-height: 30px;
+        line-height: 15px;
+        font-size: 14px;
     }
     .leftSide span{
         color: hsl(277, 64%, 61%);
@@ -134,17 +141,29 @@ body{
         background-size: cover;
         background-clip: border-box;
         border-radius: 12px 12px 0px 0px;
-        height: 300px;
-        width: 450px;
+        height: 150px;
+        width: 250px;
         display: block;
         position: absolute;
 
     }
     
     .stats{
-        gap: 1px 1px;
+        gap: 5px 5px;
         grid-template: repeat(3, 1fr) / repeat(3, 1fr);;
-        text-align: left;
+        text-align: center;        
+        flex-direction: column-reverse;
         justify-content: center;
+        align-items: center;
+
+        
+    }
+    .stats dd{
+        font-weight: 700;
+        font-size: 14px;
+    }
+    
+    .stats dt{
+        font-size: 10px;
     }
 }
